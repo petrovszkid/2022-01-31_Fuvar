@@ -75,5 +75,40 @@ namespace fuvar
             Console.WriteLine("4. feladat: {0} fuvar alatt: {1} $", db, osszesen);
 
 
+            //5.feladat
+
+            int kulonbozoelemekszama = 0;
+            string[] fizetesimodok = new string[100];
+            int[] fizetesszam = new int[100];
+            for (i = 0; i < fuvarokszama; i++)
+            {
+                j = 0;
+                while ((j <= kulonbozoelemekszama) && (adatok[i].fizetesmod != fizetesimodok[j]))
+                {
+                    j++;
+                }
+                if (j > kulonbozoelemekszama)
+                {
+                    kulonbozoelemekszama++;
+                    fizetesimodok[kulonbozoelemekszama] = adatok[i].fizetesmod;
+                }
+
+            }
+
+            for (i = 0; i < fuvarokszama; i++)
+            {
+                for (int k = 1; k <= kulonbozoelemekszama; k++)
+
+                {
+                    if (fizetesimodok[k] == adatok[i].fizetesmod) fizetesszam[k]++;
+                }
+
+            }
+            Console.WriteLine("5. feladat:");
+            for (i = 1; i <= kulonbozoelemekszama; i++)
+                Console.WriteLine("\t{0}: {1} fuvar ", fizetesimodok[i], fizetesszam[i]);
+
+
         }
     }
+}
