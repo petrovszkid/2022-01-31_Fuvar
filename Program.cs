@@ -56,6 +56,10 @@ namespace fuvar
             }
             int fuvarokszama = sorokszama;
 
+            //3.feladat
+
+            Console.WriteLine("3. feladat: {0} fuvar", fuvarokszama);
+
 
         }
     }
