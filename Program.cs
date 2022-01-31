@@ -60,6 +60,20 @@ namespace fuvar
 
             Console.WriteLine("3. feladat: {0} fuvar", fuvarokszama);
 
+            //4.feladat
+
+            double osszesen = 0;
+            int db = 0;
+            for (i = 0; i < fuvarokszama; i++)
+            {
+                if (adatok[i].taxiid == 6185)
+                {
+                    osszesen += adatok[i].viteldij;
+                    db++;
+                }
+            }
+            Console.WriteLine("4. feladat: {0} fuvar alatt: {1} $", db, osszesen);
+
 
         }
     }
