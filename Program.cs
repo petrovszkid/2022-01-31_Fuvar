@@ -1,15 +1,27 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2022_01_31_Fuvar
+namespace fuvar
 {
     class Program
     {
-        static void Main(string[] args)
+        //1.feladat
+
+        struct fuvarozas
         {
+            public int taxiid;
+            public string indulas;
+            public int idotartam;
+            public double tavolsag;
+            public double viteldij;
+            public double borravalo;
+            public string fizetesmod;
         }
+
+        
     }
 }
